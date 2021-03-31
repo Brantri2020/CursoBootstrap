@@ -46,13 +46,16 @@
 
         <div class="row">
             <div class="col-sm-4">
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona"
+                    aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
             </div>
             <div class="col-sm-4">
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">¿Dónde puedo reservar?</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva"
+                    aria-expanded="false" aria-controls="multiCollapse2">¿Dónde puedo reservar?</button>
             </div>
             <div class="col-sm-4">
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago"
+                    aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
             </div>
         </div>
 
@@ -91,7 +94,8 @@
                 -->
                 <div class="card-body">
                     <img src="images/pastaDental.jpg" alt="Responsive image" class="card-img-top">
-                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Esta es pasta dental colgate!">Pasta dental</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+                        title="Esta es pasta dental colgate!">Pasta dental</h5>
                     <h6 class="card-subtitle text-muted">Aseo</h6>
                     <p class="card-text">Blanquea tus dientes al instante.</p>
                 </div>
@@ -111,7 +115,8 @@
                 </div>
                 <div>
 
-                    <button class="btn btn-primary btn-reserva"><span
+                    <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" tittle="Producto"
+                        data-content="Consulta la disponibilidad del producto!"><span
                             class="oi oi-plus footer-address-icon"></span>Comprar</button>
 
                 </div>
@@ -182,7 +187,8 @@
                     <h5 class="card-title">Lonchys</h5>
                     <h6 class="card-subtitle text-muted">Alimentación</h6>
                     <p class="card-text">En 3 minutos esta listo para comer.</p>
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#contacto">Contacto</button>
                 </div>
                 <div>
 
@@ -196,7 +202,8 @@
 
 
 
-        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -256,6 +263,7 @@
     <script src="node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 
 
@@ -264,8 +272,9 @@
         crossorigin="anonymous"></script>
 
     <script>
-        $(function(){
+        $(function () {
             $("[data-toggle='tooltip']").tooltip();
+            $("[data-toggle='popover']").popover();
         });
     </script>
 
