@@ -234,8 +234,8 @@
                         Lonchys</h5>
                     <h6 class="card-subtitle text-muted">Alimentación</h6>
                     <p class="card-text">En 3 minutos esta listo para comer.</p>
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
-                        data-target="#contacto">Contacto</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"
+                        id="contactoBtn">Contacto</button>
                 </div>
                 <div>
 
@@ -325,6 +325,22 @@
             $("[data-toggle='popover']").popover();
             $('.carousel').carousel({
                 interval: 2000
+            });
+            $('#contacto').on('show.bs.modal', function (e) {
+                console.log('El modal contacto se está mostrando');
+                $('#contactoBtn').removeClass('btn-outline-success');
+                $('#contactoBtn').addClass('btn-primary');
+                $('#contactoBtn').prop('disabled',true);
+                
+            });
+            $('#contacto').on('shown.bs.modal', function (e) {
+                console.log('El modal contacto se mostró');
+            });
+            $('#contacto').on('hide.bs.modal', function (e) {
+                console.log('El modal contacto se oculta');
+            });
+            $('#contacto').on('hidden.bs.modal', function (e) {
+                console.log('El modal contacto se ocultó');
             });
         });
     </script>
