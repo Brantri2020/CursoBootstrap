@@ -11,8 +11,13 @@ git log
 
 iNStalar bootstrap, jquery y popper
 
-para css se puede usar la herramienta sass
+para css se puede usar la herramienta sass  ----- scss
 npm install node-sass --save-dev
 aumentar esto en package json
  "scss":"node-sass -o css/ css/"
  html color picker ---- sirve para ver los colores
+
+ Otra herramienta es less
+ npm install -g less
+ se usa @yellow por ejemplo, para compilar es:
+ lessc css/styles2.less css/styles2.css
