@@ -16,8 +16,36 @@ npm install node-sass --save-dev
 aumentar esto en package json
  "scss":"node-sass -o css/ css/"
  html color picker ---- sirve para ver los colores
+ npm run scss
 
  Otra herramienta es less
  npm install -g less
  se usa @yellow por ejemplo, para compilar es:
  lessc css/styles2.less css/styles2.css
+
+ Para salir a produccion instalamos:
+ npm install --save-dev onchange rimraf
+ "watch:scss": "onchange \"css/*.scss\" -- npm run scss "
+
+Realizar varias tareas al mismo tiempo:
+npm install --save concurrently
+   "start": "concurrently \" npm run watch:scss\" \" npm run dev\" ",
+
+Copiar archivos:
+npm install --save-dev copyfiles
+
+Comprimir imagenes para optimizar el sitio
+npm install -g imagemin-cli --unsafe-perm_true --allow-root
+    "clean":"rimraf dist",
+    "imagemin":"imagemin images/* --out-dir dist/images"
+
+para configurar con comentarios, tarea de minificar archivos css, js y html y pese menos
+npm install --save-dev usemin-cli cssmin uglifyjs htmlmin
+
+
+poner para el anterior punto comentarios para css y js
+ <!-- build:css dist/index.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- endbuild -->
