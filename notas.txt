@@ -49,3 +49,35 @@ poner para el anterior punto comentarios para css y js
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <!-- endbuild -->
+
+npm run usemin 
+
+
+Para salir a produccion en package.json ponemos esto:
+"build": "npm run clean && npm run scss & npm run imagemin && npm run usemin"
+
+
+----
+GRUNT Y GULP
+
+grunt
+iNStalar
+npm install grunt --save-dev
+crear archivo gruntfile.js
+iNStalar
+npm install grunt-contrib-sass --save-dev
+npm install -g grunt
+npm install -g ruby sass
+instalamos el watch
+npm install grunt-contrib-watch --save-dev
+npm install grunt-browser-sync --save-dev
+npm install grunt-contrib-imagemin --save-dev
+npm install time-grunt --save-dev
+npm install jit-grunt --save-dev
+npm install grunt-contrib-copy --save-dev
+npm install grunt-contrib-clean --save-dev
+npm install grunt-contrib-concat --save-dev
+npm install grunt-contrib-cssmin --save-dev
+npm install grunt-contrib-uglify --save-dev
+npm install grunt-filerev --save-dev
+npm install grunt-usemin --save-dev
