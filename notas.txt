@@ -81,3 +81,11 @@ npm install grunt-contrib-cssmin --save-dev
 npm install grunt-contrib-uglify --save-dev
 npm install grunt-filerev --save-dev
 npm install grunt-usemin --save-dev
+
+GULP
+
+npm install -g gulp-cli
+npm install gulp --save-dev
+npm install gulp-sass --save-dev
+
+npm install browser-sync --save-dev
